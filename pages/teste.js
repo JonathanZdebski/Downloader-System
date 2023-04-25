@@ -1,8 +1,8 @@
 import React from "react";
+import DsData from "./api/ds-data";
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/ds-data");
-  const data = await res.json();
+  const data = await DsData();
 
   return {
     props: {
