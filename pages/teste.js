@@ -1,4 +1,5 @@
 import React from "react";
+
 import DsData from "./api/ds-data";
 
 export async function getStaticProps() {
@@ -12,10 +13,14 @@ export async function getStaticProps() {
 }
 
 export default function teste({ data }) {
+  const item = data[0];
+
   return (
-    <div>
-      <h1>{data.titulo}</h1>
-      <p>{data.text}</p>
+    <div className={styles.containercontent}>
+      <div>
+        <h1>{item.titulo}</h1>
+        <p>{item.text}</p>
+      </div>
     </div>
   );
 }

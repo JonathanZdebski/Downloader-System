@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiMenuAddFill } from "react-icons/ri";
@@ -29,13 +29,35 @@ function Navbar() {
     setShowWindowsSubMenu(!showWindowsSubMenu);
   };
 
+  useEffect(() => {
+    function closeMenu() {
+      setIsMenuOpen(false);
+    }
+
+    document.querySelectorAll("nav ul li a, .hamburguer").forEach((item) => {
+      item.addEventListener("click", handleCloseMenu);
+    });
+
+    return () => {
+      document.querySelectorAll("nav ul li a, .hamburguer").forEach((item) => {
+        item.removeEventListener("click", handleCloseMenu);
+      });
+    };
+  }, []);
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className={styles.navbarcontainer}>
       <div className={styles.navbar}>
         <div className={click ? styles.navmenu : styles.navmenuactive}>
           <ul className={styles.navmenu}>
             <li className={styles.submenu}>
-              <Link href="/">Home</Link>
+              <Link onClick={handleCloseMenu} href="/">
+                Home
+              </Link>
             </li>
             <li
               className={styles.submenu}
@@ -43,13 +65,13 @@ function Navbar() {
               onMouseLeave={handleToggleSecuritySubMenu}
             >
               <Link href="">
-                Security
+                Speak Tools
                 <RiMenuAddFill size={15} style={{ paddingLeft: "5px" }} />
               </Link>
               {showSecuritySubMenu && (
                 <ul>
                   <li>
-                    <Link href="/security/">Discord Updated</Link>
+                    <Link href="/communication/discord">Discord Updated</Link>
                   </li>
                   <li>
                     <Link href="/security/">Avast Antivirus</Link>

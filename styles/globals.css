@@ -10,12 +10,13 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
     min-height: 70vh;
-    width: 99%;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #d1d1d1; 
     margin-bottom: 100px;    
+    overflow-x: hidden;
 }
 
 .titulo {
@@ -26,6 +27,7 @@
   margin-top: 1rem;
   transition: 0.3s;
 }
+
 
 .titulo:hover {
   color: rgb(0, 192, 192);
