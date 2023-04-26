@@ -29,33 +29,18 @@ function Navbar() {
     setShowWindowsSubMenu(!showWindowsSubMenu);
   };
 
-  useEffect(() => {
-    function closeMenu() {
-      setIsMenuOpen(false);
-    }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    document.querySelectorAll("nav ul li a, .hamburguer").forEach((item) => {
-      item.addEventListener("click", handleCloseMenu);
-    });
-
-    return () => {
-      document.querySelectorAll("nav ul li a, .hamburguer").forEach((item) => {
-        item.removeEventListener("click", handleCloseMenu);
-      });
-    };
-  }, []);
-
-  const handleCloseMenu = () => {
-    setIsMenuOpen(false);
-  };
-
+  function handleMenuClick() {
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
     <div className={styles.navbarcontainer}>
       <div className={styles.navbar}>
         <div className={click ? styles.navmenu : styles.navmenuactive}>
           <ul className={styles.navmenu}>
             <li className={styles.submenu}>
-              <Link onClick={handleCloseMenu} href="/">
+              <Link onClick={handleMenuClick} href="/">
                 Home
               </Link>
             </li>
