@@ -26,17 +26,19 @@ export default function teste({ data }) {
           src={discordcontent}
           alt="discordcontent"
         />
-        <p className={styles.info}>Updated 2021-01-24 – Discord (65.6 MB)</p>
+        <div className={styles.info}>
+          <p>Updated 2021-01-24 – Discord (65.6 MB)</p>
+        </div>
         <div className={styles.buttons}>
-          <button>DOWNLOAD FOR WINDOWS</button>
-          <button>DOWNLOAD FOR IOS</button>
+          <button>DOWNLOAD FOR Windows</button>
+          <button>DOWNLOAD FOR Ios</button>
           <button>DOWNLOAD FOR Android</button>
-          <button>DOWNLOAD FOR MAC</button>
+          <button>DOWNLOAD FOR Mac</button>
         </div>
         <h4>DESCRIPTION</h4>
         <p>{item.text}</p>
         <h4>INSTALLATION PROCESS</h4>
-        <div>
+        <div className={styles.frame}>
           <iframe
             width="560"
             height="315"
@@ -46,7 +48,6 @@ export default function teste({ data }) {
             allowfullscreen
           ></iframe>
         </div>
-        <div></div>
       </div>
     </div>
   );

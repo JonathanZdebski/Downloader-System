@@ -23,7 +23,6 @@
 
 .titulo {
     text-align: center;
-    
     margin-bottom: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(110, 110, 110, 0.2);
@@ -36,6 +35,7 @@
 .info {
     font-weight: 900;
     color: rgb(53, 53, 53);
+    text-align: center;
 }
 
 .image {
@@ -52,7 +52,7 @@
     border-radius: 5px;
     margin-bottom: 1rem;
     transition: 0.2s ease-in-out;
-
+    cursor: pointer;
 }
 
 .buttons button:hover{
@@ -63,5 +63,34 @@
   @media screen and (max-width: 740px) {
     .containercontent {
        margin-left: 0.5rem;
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+        padding: 2rem;
+
+    }
+    .frame{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    .frame iframe{
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .buttons {
+
+        text-align: center;
+    }
+    .info p{
+        text-align: center;
+        align-items: center;
     }
   }
