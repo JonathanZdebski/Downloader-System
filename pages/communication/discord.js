@@ -26,7 +26,27 @@ export default function teste({ data }) {
           src={discordcontent}
           alt="discordcontent"
         />
+        <p className={styles.info}>Updated 2021-01-24 – Discord (65.6 MB)</p>
+        <div className={styles.buttons}>
+          <button>DOWNLOAD FOR WINDOWS</button>
+          <button>DOWNLOAD FOR IOS</button>
+          <button>DOWNLOAD FOR Android</button>
+          <button>DOWNLOAD FOR MAC</button>
+        </div>
+        <h4>DESCRIPTION</h4>
         <p>{item.text}</p>
+        <h4>INSTALLATION PROCESS</h4>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/g2rNF-IK0FQ"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div></div>
       </div>
     </div>
   );

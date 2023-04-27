@@ -39,10 +39,8 @@ function Navbar() {
       <div className={styles.navbar}>
         <div className={click ? styles.navmenu : styles.navmenuactive}>
           <ul className={styles.navmenu}>
-            <li className={styles.submenu}>
-              <Link onClick={handleMenuClick} href="/">
-                Home
-              </Link>
+            <li onClick={handleMenuClick} className={styles.submenu}>
+              <Link href="/">Home</Link>
             </li>
             <li
               className={styles.submenu}
