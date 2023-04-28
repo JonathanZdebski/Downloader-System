@@ -4,6 +4,11 @@ import discordcontent from "../../public/images/discordcontent.png";
 import DsData from "../api/ds-data";
 import Image from "next/image";
 
+import discord1 from "../../public/images/discord1.png";
+import discord2 from "../../public/images/discord2.png";
+import discord3 from "../../public/images/discord3.png";
+import discord4 from "../../public/images/discord4.png";
+
 export async function getStaticProps() {
   const data = await DsData();
 
@@ -36,7 +41,7 @@ export default function teste({ data }) {
           <button>DOWNLOAD FOR Mac</button>
         </div>
         <h4>DESCRIPTION</h4>
-        <p>{item.text}</p>
+        <p className={styles.desc}>{item.text}</p>
         <h4>INSTALLATION PROCESS</h4>
         <div className={styles.frame}>
           <iframe
@@ -47,6 +52,25 @@ export default function teste({ data }) {
             allow="autoplay; encrypted-media"
             allowfullscreen
           ></iframe>
+        </div>
+        <h4>SOFTWARE IMAGES</h4>
+        <div className={styles.grid}>
+          <div>
+            <Image src={discord1} alt="discord1" width={350} height={200} />
+          </div>
+          <div>
+            <Image src={discord2} alt="discord2" width={350} height={200} />
+          </div>
+          <div>
+            <Image src={discord3} alt="discord3" width={350} height={200} />
+          </div>
+          <div>
+            <Image src={discord4} alt="discord4" width={350} height={200} />
+          </div>
+        </div>
+        <h4>HISTORY</h4>
+        <div className={styles.history}>
+          <p>{item.history}</p>
         </div>
       </div>
     </div>

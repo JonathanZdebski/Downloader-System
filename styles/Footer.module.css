@@ -1,26 +1,29 @@
 .footer {
     width: 102%;
+    height: auto;
     padding: 9rem 0;
     background-color: rgba(14, 14, 14, 0.89);
     margin-top: 4rem;
-   margin-left: -1rem;
-   display: flex;
-   flex-wrap: wrap;
+    margin-left: -1rem;
+   
 }
 
 .footercontainer {
-        margin: auto;
-        display: flex;
-        grid-gap: 40px;
-        align-items: center;
-        justify-content: space-between;
+    margin: auto;
+    display: flex;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 740px) {
+
        .footer {
+
         width: 109%;
         margin-top: 4rem;
-         display: flex;
-   flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
        } 
 }
