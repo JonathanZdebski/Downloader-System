@@ -3,6 +3,7 @@ import styles from "../../styles/Content.module.css";
 import zoomcontent from "../../public/images/zoomlogo.png";
 import DsData from "../api/ds-data";
 import Link from "next/link";
+import Head from "next/head";
 import Image from "next/image";
 
 import zoom1 from "../../public/images/zoom1.png";
@@ -25,6 +26,9 @@ export default function teste({ data }) {
 
   return (
     <div className={styles.containercontent}>
+      <Head>
+        <title key="title">Zoom Video Download - Downloader System</title>
+      </Head>
       <div className={styles.card}>
         <h1 className={styles.titulo}>{item.titulo}</h1>
         <Image
