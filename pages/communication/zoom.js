@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "../../styles/Content.module.css";
-import discordcontent from "../../public/images/discordcontent.png";
+import zoomcontent from "../../public/images/zoomlogo.png";
 import DsData from "../api/ds-data";
 import Link from "next/link";
 import Image from "next/image";
 
-import discord1 from "../../public/images/discord1.png";
-import discord2 from "../../public/images/discord2.png";
-import discord3 from "../../public/images/discord3.png";
-import discord4 from "../../public/images/discord4.png";
+import zoom1 from "../../public/images/zoom1.png";
+import zoom2 from "../../public/images/zoom2.png";
+import zoom3 from "../../public/images/zoom3.png";
+import zoom4 from "../../public/images/zoom4.png";
 
 export async function getStaticProps() {
   const data = await DsData();
@@ -21,7 +21,7 @@ export async function getStaticProps() {
 }
 
 export default function teste({ data }) {
-  const item = data[0];
+  const item = data[1];
 
   return (
     <div className={styles.containercontent}>
@@ -29,30 +29,31 @@ export default function teste({ data }) {
         <h1 className={styles.titulo}>{item.titulo}</h1>
         <Image
           className={styles.image}
-          src={discordcontent}
-          alt="discordcontent"
+          width={600}
+          src={zoomcontent}
+          alt="zoomcontent"
         />
         <div className={styles.info}>
-          <p>Updated 2021-01-24 – Discord (65.6 MB)</p>
+          <p>Updated 2021-01-24 – ZOOM Video Updated (14 MB)</p>
         </div>
         <div className={styles.buttons}>
-          <Link href="https://discord.com/download" target="blank_">
+          <Link href="https://zoom.us/download" target="blank_">
             <button>DOWNLOAD FOR Windows</button>
           </Link>
           <Link
-            href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746?attemptId=32239542-2496-4a67-856a-0a1d01c5c218&fingerprint=1101637386187853854.BzUxE_DwDMvUSNM3IfkPLJHTHyk"
+            href="https://apps.apple.com/br/app/zoom-one-platform-to-connect/id546505307"
             target="blank_"
           >
             <button>DOWNLOAD FOR IOS</button>
           </Link>
           <Link
-            href="https://play.google.com/store/apps/details?id=com.discord&fingerprint=1101637386187853854.BzUxE_DwDMvUSNM3IfkPLJHTHyk&attemptId=d8154138-cd8c-4b79-b5d7-0d1e22ffa289"
+            href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en"
             target="blank_"
           >
             <button>DOWNLOAD FOR Android</button>
           </Link>
           <Link
-            href="https://discord.com/api/download?platform=osx"
+            href="https://support.zoom.us/hc/en-us/articles/203020795-Installing-the-Zoom-application-on-macOS"
             target="blank_"
           >
             <button>DOWNLOAD FOR Mac</button>
@@ -65,25 +66,24 @@ export default function teste({ data }) {
           <iframe
             width="660"
             height="415"
-            src="https://www.youtube.com/embed/g2rNF-IK0FQ"
-            frameborder="0"
+            src="https://www.youtube.com/embed/cLT5vKNQW7Q"
             allow="autoplay; encrypted-media"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <h4>SOFTWARE IMAGES</h4>
         <div className={styles.grid}>
           <div>
-            <Image src={discord1} alt="discord1" width={350} height={200} />
+            <Image src={zoom1} alt="zoom1" width={350} height={200} />
           </div>
           <div>
-            <Image src={discord2} alt="discord2" width={350} height={200} />
+            <Image src={zoom2} alt="zoom2" width={350} height={200} />
           </div>
           <div>
-            <Image src={discord3} alt="discord3" width={350} height={200} />
+            <Image src={zoom3} alt="zoom3" width={350} height={200} />
           </div>
           <div>
-            <Image src={discord4} alt="discord4" width={350} height={200} />
+            <Image src={zoom4} alt="zoom4" width={350} height={200} />
           </div>
         </div>
         <h4>HISTORY</h4>

@@ -57,7 +57,7 @@ function Navbar() {
                     <Link href="/communication/discord">Discord Updated</Link>
                   </li>
                   <li>
-                    <Link href="/security/">Avast Antivirus</Link>
+                    <Link href="/communication/zoom">Zoom Video</Link>
                   </li>
                 </ul>
               )}
@@ -74,10 +74,7 @@ function Navbar() {
               {showStreamingSubMenu && (
                 <ul>
                   <li>
-                    <Link href="/teste">OpenBroadCaster</Link>
-                  </li>
-                  <li>
-                    <Link href="/teste">YouTube</Link>
+                    <Link href="/streamming/obs-studio">OpenBroadCaster</Link>
                   </li>
                 </ul>
               )}
@@ -94,10 +91,7 @@ function Navbar() {
               {showBrowsersSubMenu && (
                 <ul>
                   <li>
-                    <Link href="/browsers/">Firefox</Link>
-                  </li>
-                  <li>
-                    <Link href="/browsers/">Chrome</Link>
+                    <Link href="/browsers/brave">Brave</Link>
                   </li>
                 </ul>
               )}
@@ -114,10 +108,14 @@ function Navbar() {
               {showWindowsSubMenu && (
                 <ul>
                   <li>
-                    <Link href="/windows/">Visual Studio Code</Link>
+                    <Link href="/windows/visual-studio-code">
+                      Visual Studio Code
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/windows/">NetBeans IDE 8.2 Download</Link>
+                    <Link href="/windows/netbeans-8.2">
+                      NetBeans IDE 8.2 Download
+                    </Link>
                   </li>
                 </ul>
               )}

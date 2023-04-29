@@ -1,52 +1,52 @@
-import virtualbox from "../public/images/virtualbox.png";
-import buttonsh from "../public/images/buttonsh.png";
+import zoomlogoP from "../public/images/zoomlogoP.png";
+import bravelogo from "../public/images/bravelogoP.png";
 import visualstudio from "../public/images/visualstudio.png";
 import obs from "../public/images/obs.png";
-import windows10 from "../public/images/windows10.png";
+import netbeans from "../public/images/netbeanslogoP.png";
 import discord from "../public/images/discord.png";
 
 const HeroData = [
   {
     id: 1,
-    imgsrc: virtualbox,
-    title: "Learning how to Install Virtual Machines",
-    text: "Oracle VM VirtualBox (formerly Sun VirtualBox, Sun xVM VirtualBox and Innotek VirtualBox) is a free and open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation...",
-    view: "READ MORE",
+    imgsrc: zoomlogoP,
+    title: "Zoom Video",
+    text: "Zoom Video Communications, Inc. (or simply Zoom) is an American communications technology company headquartered in San Jose, California. It provides videotelephony...",
+    view: "/communication/zoom",
   },
   {
     id: 2,
-    imgsrc: buttonsh,
-    title: "Learning how to Install Virtual Machines",
-    text: "In this tutorial we will show you how to shut down your computer with just 1 click every day, in a simple and quick way.",
-    view: "READ MORE",
+    imgsrc: bravelogo,
+    title: "Brave Browser",
+    text: "Brave is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser. It blocks ads and website trackers, and provides a way for users to send...",
+    view: "/browsers/brave",
   },
   {
     id: 3,
     imgsrc: visualstudio,
     title: "Visual Studio Code",
     text: "Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting…",
-    view: "READ MORE",
+    view: "/windows/visual-studio-code",
   },
   {
     id: 4,
     imgsrc: obs,
     title: "OBS Studio 27.0",
     text: "Open Broadcaster Software (OBS) is a free and open-source cross-platform streaming and recording program built with Qt and maintained by the OBS Project. As of 2016, the software is now referred…",
-    view: "READ MORE",
+    view: "/streamming/obs-studio",
   },
   {
     id: 5,
-    imgsrc: windows10,
-    title: "Windows 10 from USB Flash",
-    text: "Windows 10 is a series of operating systems developed by Microsoft and released as part of its Windows NT family of operating systems. It is the successor to Windows 8.1, released nearly two years earlier, and was released…",
-    view: "READ MORE",
+    imgsrc: netbeans,
+    title: "NetBeans IDE 8.2",
+    text: "NetBeans is an integrated development environment (IDE) for Java. NetBeans allows applications to be developed from a set of modular software components called modules. NetBeans runs on Microsoft...",
+    view: "/windows/netbeans-8.2",
   },
   {
     id: 6,
     imgsrc: discord,
     title: "Discord Updated",
     text: "Discord is an American VoIP, instant messaging and digital distribution platform designed for creating communities. Users communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities…",
-    view: "READ MORE",
+    view: "/communication/discord",
   },
 ];
 

@@ -27,6 +27,11 @@
   transition: 0.3s;
 }
 
+.h1 {
+  font-family: 'Cinzel', serif;
+  background-color: aqua;
+}
+
 
 .titulo:hover {
   color: rgb(0, 192, 192);
