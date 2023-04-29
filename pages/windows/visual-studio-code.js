@@ -34,7 +34,7 @@ export default function teste({ data }) {
           alt="visualstudiologo"
         />
         <div className={styles.info}>
-          <p>Updated 2021-01-25 – VS Code (65.5 MB)</p>
+          <p>Updated 2023-04-29 – VS Code (65.5 MB)</p>
         </div>
         <div className={styles.buttons}>
           <Link

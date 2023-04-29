@@ -34,7 +34,7 @@ export default function teste({ data }) {
           alt="zoomcontent"
         />
         <div className={styles.info}>
-          <p>Updated 2021-01-24 – ZOOM Video Updated (14 MB)</p>
+          <p>Updated 2023-04-29 – ZOOM Video Updated (14 MB)</p>
         </div>
         <div className={styles.buttons}>
           <Link href="https://zoom.us/download" target="blank_">
@@ -44,19 +44,25 @@ export default function teste({ data }) {
             href="https://apps.apple.com/br/app/zoom-one-platform-to-connect/id546505307"
             target="blank_"
           >
-            <button>DOWNLOAD FOR IOS</button>
+            <button className={`${styles.button} ${styles.black}`}>
+              DOWNLOAD FOR IOS
+            </button>
           </Link>
           <Link
             href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en"
             target="blank_"
           >
-            <button>DOWNLOAD FOR Android</button>
+            <button className={`${styles.button} ${styles.green}`}>
+              DOWNLOAD FOR Android
+            </button>
           </Link>
           <Link
             href="https://support.zoom.us/hc/en-us/articles/203020795-Installing-the-Zoom-application-on-macOS"
             target="blank_"
           >
-            <button>DOWNLOAD FOR Mac</button>
+            <button className={`${styles.button} ${styles.black}`}>
+              DOWNLOAD FOR Mac
+            </button>
           </Link>
         </div>
         <h4>DESCRIPTION</h4>

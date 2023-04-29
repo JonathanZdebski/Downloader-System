@@ -34,11 +34,13 @@ export default function teste({ data }) {
           alt="zoomcontent"
         />
         <div className={styles.info}>
-          <p>Updated 2022-09-07 – Open Broadcaster Software (140 MB)</p>
+          <p>Updated 2023-04-29 – Open Broadcaster Software (140 MB)</p>
         </div>
         <div className={styles.buttons}>
           <Link href="https://obsproject.com/download" target="blank_">
-            <button>DOWNLOAD Updated</button>
+            <button className={`${styles.button} ${styles.blue}`}>
+              DOWNLOAD Updated
+            </button>
           </Link>
           <Link
             href="https://www.videohelp.com/software?d=OBS-Studio-27.0-Full-Installer-x64.exe"

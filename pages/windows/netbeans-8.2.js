@@ -35,7 +35,7 @@ export default function teste({ data }) {
         />
         <div className={styles.info}>
           <p>
-            Updated 2021-03-14 – NetBeans IDE 8.2 (221 MB) – Java JDK (215.35
+            Updated 2023-04-29 – NetBeans IDE 8.2 (221 MB) – Java JDK (215.35
             MB)
           </p>
         </div>
@@ -44,7 +44,9 @@ export default function teste({ data }) {
             href="https://mega.nz/file/9aJhTYxa#vgitzVc5oiBZrUZTifDfE701KGUVkYNHQdnBLeG3BDg"
             target="blank_"
           >
-            <button>DOWNLOAD v8.2</button>
+            <button className={`${styles.button} ${styles.blue}`}>
+              DOWNLOAD v8.2
+            </button>
           </Link>
           <Link
             href="https://www.oracle.com/br/java/technologies/javase/javase8u211-later-archive-downloads.html"
@@ -56,7 +58,9 @@ export default function teste({ data }) {
             href="https://downloadersystem.wordpress.com/windows/programming/apache-netbeans-12-0-download/"
             target="blank_"
           >
-            <button>UPDATE TO NETBEANS 12.0</button>
+            <button className={`${styles.button} ${styles.black}`}>
+              UPDATE TO NETBEANS 12.0
+            </button>
           </Link>
         </div>
         <h4>DESCRIPTION</h4>

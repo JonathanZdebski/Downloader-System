@@ -33,7 +33,7 @@ export default function teste({ data }) {
           alt="discordcontent"
         />
         <div className={styles.info}>
-          <p>Updated 2021-01-24 – Discord (65.6 MB)</p>
+          <p>Updated 2023-04-29 – Discord (65.6 MB)</p>
         </div>
         <div className={styles.buttons}>
           <Link href="https://discord.com/download" target="blank_">
@@ -43,19 +43,25 @@ export default function teste({ data }) {
             href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746?attemptId=32239542-2496-4a67-856a-0a1d01c5c218&fingerprint=1101637386187853854.BzUxE_DwDMvUSNM3IfkPLJHTHyk"
             target="blank_"
           >
-            <button>DOWNLOAD FOR IOS</button>
+            <button className={`${styles.button} ${styles.black}`}>
+              DOWNLOAD FOR IOS
+            </button>
           </Link>
           <Link
             href="https://play.google.com/store/apps/details?id=com.discord&fingerprint=1101637386187853854.BzUxE_DwDMvUSNM3IfkPLJHTHyk&attemptId=d8154138-cd8c-4b79-b5d7-0d1e22ffa289"
             target="blank_"
           >
-            <button>DOWNLOAD FOR Android</button>
+            <button className={`${styles.button} ${styles.green}`}>
+              DOWNLOAD FOR Android
+            </button>
           </Link>
           <Link
             href="https://discord.com/api/download?platform=osx"
             target="blank_"
           >
-            <button>DOWNLOAD FOR Mac</button>
+            <button className={`${styles.button} ${styles.black}`}>
+              DOWNLOAD FOR Mac
+            </button>
           </Link>
         </div>
         <h4>DESCRIPTION</h4>

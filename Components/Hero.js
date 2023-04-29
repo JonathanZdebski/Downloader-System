@@ -12,9 +12,11 @@ const Hero = () => {
           <h2 className="h2">{item.title}</h2>
           <Image src={item.imgsrc} alt={item.title} />
           <p>{item.text}</p>
-          <Link href={item.view} className={styles.button}>
-            READ MORE
-          </Link>
+          <div className={styles.buttoncontainer}>
+            <Link href={item.view} className={styles.button}>
+              READ MORE
+            </Link>
+          </div>
         </div>
       ))}
     </div>

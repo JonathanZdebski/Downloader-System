@@ -34,20 +34,29 @@ export default function teste({ data }) {
           alt="bravelogo"
         />
         <div className={styles.info}>
-          <p>Updated 2020-08-28 – Brave Browser (71.0 MB)</p>
+          <p>Updated 2023-04-29 – Brave Browser (71.0 MB)</p>
         </div>
         <div className={styles.buttons}>
           <Link href="https://brave.com/pt-br/download/" target="blank_">
-            <button>DOWNLOAD FOR WINDOWS x64</button>
+            <button className={`${styles.button} ${styles.orange}`}>
+              DOWNLOAD FOR WINDOWS x64
+            </button>
           </Link>
           <Link
             href="https://laptop-updates.brave.com/latest/winia32"
             target="blank_"
           >
-            <button>DOWNLOAD FOR WINDOWS x86</button>
+            <button className={`${styles.button} ${styles.orange}`}>
+              DOWNLOAD FOR WINDOWS x86
+            </button>
           </Link>
-          <Link href="https://laptop-updates.brave.com/latest/osx">
-            <button>DOWNLOAD MacOS</button>
+          <Link
+            href="https://laptop-updates.brave.com/latest/osx"
+            target="blank_"
+          >
+            <button className={`${styles.button} ${styles.black}`}>
+              DOWNLOAD MacOS
+            </button>
           </Link>
         </div>
         <h4>DESCRIPTION</h4>
