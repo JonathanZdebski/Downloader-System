@@ -1,206 +1,199 @@
 .containercontent {
-    max-width: auto;
-    height: auto;
-    height: 85vh;
-    margin-bottom: 150rem;
-    
+  max-width: auto;
+  height: auto;
 }
 
 .card {
-    background-color: rgb(255, 255, 255);
-    max-width: 950px;
-    height: auto;
-    margin: auto;
-    border-radius: 0.5rem;
-    padding: 3.5rem;
-    padding-top: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 15rem;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(255, 255, 255);
+  max-width: 950px;
+  height: auto;
+  margin: auto;
+  border-radius: 0.5rem;
+  padding: 3.5rem;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 15rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid rgba(110, 110, 110, 0.2);
-    font-family: 'Cinzel', serif;
-    font-weight: 500;
-    color: rgb(49, 49, 49);
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(110, 110, 110, 0.2);
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  color: rgb(49, 49, 49);
 }
 
 .card p {
-    text-align: left;
-
+  text-align: left;
 }
 
 .card h4 {
-    font-size: 1.2rem;
-    text-align: center;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .info {
-    font-weight: 900;
-    color: rgb(53, 53, 53);
-    text-align: center;
-    font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .image {
-    max-width: 100%;
-    transition: 0.3s;
-    border-radius: 10px;
-    height: auto;
-  }
+  max-width: 100%;
+  transition: 0.3s;
+  border-radius: 10px;
+  height: auto;
+}
 
 .image:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 
-.buttons button{
-    color: white;
-    padding: 12px;
-    margin-inline: 0.4rem;
-    border: none;
-    background-color: rgba(0, 35, 110, 0.897);
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-
+.buttons button {
+  color: white;
+  padding: 12px;
+  margin-inline: 0.4rem;
+  border: none;
+  background-color: rgba(0, 35, 110, 0.897);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.buttons button:hover{
-    background-color: rgb(0, 115, 160);
-    transition: 0.2s ease-in-out;
+.buttons button:hover {
+  background-color: rgb(0, 115, 160);
+  transition: 0.2s ease-in-out;
 }
 
 .buttons button.black {
-    background-color: rgb(60, 63, 66);
+  background-color: rgb(60, 63, 66);
 }
 
-.buttons button.black:hover{
-    background-color: rgb(122, 122, 122);
-    transition: 0.2s ease-in-out;
+.buttons button.black:hover {
+  background-color: rgb(122, 122, 122);
+  transition: 0.2s ease-in-out;
 }
 
 .buttons button.green {
-    background-color: rgb(0, 139, 97);
+  background-color: rgb(0, 139, 97);
 }
 
-.buttons button.green:hover{
-    background-color: rgb(0, 143, 19);
-    transition: 0.2s ease-in-out;
+.buttons button.green:hover {
+  background-color: rgb(0, 143, 19);
+  transition: 0.2s ease-in-out;
 }
 
 .buttons button.blue {
-    background-color: rgb(0, 170, 192);
+  background-color: rgb(0, 170, 192);
 }
 
-.buttons button.blue:hover{
-    background-color: rgb(0, 121, 143);
-    transition: 0.2s ease-in-out;
+.buttons button.blue:hover {
+  background-color: rgb(0, 121, 143);
+  transition: 0.2s ease-in-out;
 }
 
 .buttons button.orange {
-    background-color: rgb(255, 72, 0);
+  background-color: rgb(255, 72, 0);
 }
 
-.buttons button.orange:hover{
-    background-color: rgb(184, 80, 49);
-    transition: 0.2s ease-in-out;
+.buttons button.orange:hover {
+  background-color: rgb(184, 80, 49);
+  transition: 0.2s ease-in-out;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  .grid div {
-    border: 1px solid rgb(211, 211, 211);
-    padding: 10px;
-    text-align: center;
-    border-radius: 15px;
-    transition: transform 0.3s ease-out;
-  }
-  
-  .grid div:hover {
-    transition: 0.3s;
-    transform: scale(1.6);
-  }
-
-  .history {
-    color: rgb(53, 53, 53);
-    font-size: 1.2rem;
-    margin-top: -1rem;
-  }
-
-.desc {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
-  @media screen and (max-width: 740px) {
-    .containercontent {
-       margin-left: 0.5rem;
-       display: flex;
-       flex-wrap: wrap;
-       margin-bottom: 350rem;
-    }
+.grid div {
+  border: 1px solid rgb(211, 211, 211);
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  transition: transform 0.3s ease-out;
+}
 
-    .card {
-        width: 80%;
-        padding: 2rem;
-     
-    }
+.grid div:hover {
+  transition: 0.3s;
+  transform: scale(1.6);
+}
 
-    .frame{
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-    }
+.history {
+  color: rgb(53, 53, 53);
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
 
-    .frame iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+.desc {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
 
-    .buttons {
-        text-align: center;
-        justify-content: space-between;
-    }
-
-    .buttons button {
-        margin-bottom: 1rem;
-    }
-
-    .info p{
-        text-align: center;
-        align-items: center;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-    .grid div {
-        border: none;
-      }
-
-      .grid div:hover {
-        transition: 0.3s;
-        transform: scale(1.0);
-      }
+@media screen and (max-width: 740px) {
+  .containercontent {
+    margin-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 350rem; */
   }
+
+  .card {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .frame {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .buttons {
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .buttons button {
+    margin-bottom: 1rem;
+  }
+
+  .info p {
+    text-align: center;
+    align-items: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid div {
+    border: none;
+  }
+
+  .grid div:hover {
+    transition: 0.3s;
+    transform: scale(1);
+  }
+}
