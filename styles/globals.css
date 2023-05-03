@@ -41,7 +41,7 @@
 *{
   font-family: 'Cinzel', serif;
   font-family: 'Open Sans', sans-serif;
-
+  text-decoration: none;
 }
 
 .h2 {
@@ -49,6 +49,7 @@
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  color: rgb(58, 58, 58);
 }
 
 .h2:hover {

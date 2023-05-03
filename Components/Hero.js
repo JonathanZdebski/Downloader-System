@@ -9,8 +9,10 @@ const Hero = () => {
     <div className={styles.projectcontainer}>
       {HeroData.map((item) => (
         <div className={styles.projectcard} key={item.id}>
-          <h2 className="h2">{item.title}</h2>
-          <Image src={item.imgsrc} alt={item.title} />
+          <Link href={item.view}>
+            <h2 className="h2">{item.title}</h2>
+            <Image src={item.imgsrc} alt={item.title} />
+          </Link>
           <p>{item.text}</p>
           <div className={styles.buttoncontainer}>
             <Link href={item.view} className={styles.button}>
