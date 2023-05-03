@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import { RiMenuAddFill } from "react-icons/ri";
 import Link from "next/link";

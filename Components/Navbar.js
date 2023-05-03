@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { RiMenuAddFill } from "react-icons/ri";
 import NavItem from "../components/NavItem";
 import Link from "next/link";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
-  const [showBrowsersSubMenu, setShowBrowsersSubMenu] = useState(false);
-  const [showWindowsSubMenu, setShowWindowsSubMenu] = useState(false);
-
-  const handleToggleBrowsersSubMenu = () => {
-    setShowBrowsersSubMenu(!showBrowsersSubMenu);
-  };
-
-  const handleToggleWindowsSubMenu = () => {
-    setShowWindowsSubMenu(!showWindowsSubMenu);
-  };
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleMenuClick() {
