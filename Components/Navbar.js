@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import NavItem from "../components/NavItem";
 import Link from "next/link";
+import NavItem from "./NavItem";
 
 function Navbar() {
   const [click, setClick] = useState(false);
