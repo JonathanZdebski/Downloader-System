@@ -16,7 +16,7 @@ const Contactus = () => {
         "service_zet32rm",
         "template_c1kywm5",
         form.current,
-        process.env.EMAILJS_USER_ID
+        "YNgQJRZzSHe6Spfvk"
       )
       .then(
         (result) => {

@@ -1,13 +1,14 @@
 .footer {
   width: 102%;
   height: auto;
-  padding: 9rem 0;
+  padding: 7rem 0;
   background-color: rgba(14, 14, 14, 0.89);
   display: flex;
   margin-left: -1rem;
   margin-right: -1rem;
   flex-direction: column;
   margin-top: 3rem;
+
 }
 
 .footercontainer {
@@ -20,12 +21,98 @@
   flex-wrap: wrap;
 }
 
+.footer h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+}
+
+.left {
+  width: 50%;
+  color: rgb(236, 236, 236);
+  margin-left: 3rem;
+  margin-top: -3rem;
+}
+
+.right {
+  color: rgb(236, 236, 236);
+  position: absolute;
+  right: 0;
+  margin-right: 15rem;
+  margin-top: -3rem;
+} 
+
+.right li {
+  display: inline;
+  font-size: 2.5rem;
+  padding: 5px;
+  margin-right: 0.5rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  color: rgb(236, 236, 236);
+}
+
+.right li:hover {
+  background-color: rgba(240, 248, 255, 0.274);
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.info {
+  margin-top: 2rem;
+  color: rgb(236, 236, 236);
+  box-sizing: border-box;
+  width: 105px;
+}
+
+.info:hover {
+  cursor: pointer;
+  border-bottom: 1px solid ;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 740px) {
   .footer {
     padding-right: 2rem;
     width: 100%;
-    height: 0;
+    height: 300px;
     margin-top: 2rem;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .left h3{
+    text-align: center;
+  }
+
+  .left {
+    width: 100%; 
+    margin-left: 0;
+    margin-top: -6rem; 
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+
+  .right {
+    position: static; 
+    margin: 2rem 0 0; 
+    text-align: center; 
+    margin-left: 1.5rem;
+  }
+
+  .right li {
+    display: inline; 
+    font-size: 2rem; 
+    margin: 1rem auto;
+  }
+
+  .info {
+    width: 105px; 
+    margin-left: 0; 
+    margin-top: 2rem;
   }
 }
+
+
+
