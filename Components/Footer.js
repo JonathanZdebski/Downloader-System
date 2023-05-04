@@ -40,14 +40,6 @@ const Footer = () => {
               <FaYoutube />
             </li>
           </Link>
-          <Link
-            href="https://www.youtube.com/@downloadersystem2523"
-            target="_blank"
-          >
-            <li>
-              <FaYoutube />
-            </li>
-          </Link>
         </div>
       </div>
     </div>
