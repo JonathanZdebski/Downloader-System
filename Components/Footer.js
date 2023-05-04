@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
-import { FaFacebook, FaYoutube } from "react-icons/Fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
