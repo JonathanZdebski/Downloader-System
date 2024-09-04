@@ -4,18 +4,17 @@
 
 .imgwrapper {
     position: relative;
-    
 }
-  
+
 .navbarimg {
     display: block; 
-    width: 101%; 
-    height: auto;
+    width: 100%; 
+    max-height: 500px; /* Ajuste o valor para a altura desejada */
+    object-fit: cover; /* Mantém a proporção da imagem enquanto ajusta o tamanho */
     margin: 0 auto;
-
 }
 
-.textOverlay h1{
+.textOverlay h1 {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -30,6 +29,7 @@
     transform: translateX(-50%);
     color: rgb(233, 233, 233);
 }
+
 
 @media screen and (max-width: 840px) {
      .navbarimg {
